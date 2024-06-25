@@ -1,0 +1,13 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.413); 
+}

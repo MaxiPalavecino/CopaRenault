@@ -1,0 +1,51 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.recuadro {
+    padding: 5px;
+    display: flex;
+    border: 2px solid #333; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.413);
+}
+
+.sponsors {
+    width: 35%;
+    margin: 3px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border: 2px solid #333; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.413);
+}
+
+.segundo-rec {
+    width: 65%;
+}
+
+.calendario {
+    height: 42.27%;
+    margin: 3px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.partidos {
+    height: 42.27%;
+    margin: 3px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}

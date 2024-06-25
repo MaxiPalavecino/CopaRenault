@@ -1,0 +1,12 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.precios {
+    margin: 3px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}

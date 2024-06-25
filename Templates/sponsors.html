@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Sponsors{% endblock %}
+
+{% block extra_styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sponsors.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Aquí encontrarás todos los sponsors del evento</h1>
+    <div class="recuadro">
+        {% for sponsor in sponsors %}
+        <div class="card">
+            <h1 class="sponsortitle">{{ sponsor.name }}</h1>
+            <img src="{{ url_for('static', filename=sponsor.logo) }}" class="sponsorimg">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

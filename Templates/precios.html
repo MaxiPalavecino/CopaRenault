@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Precios{% endblock %}
+
+{% block extra_styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/precios.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Precios de los equipos para la copa</h1>    
+    <div class="precios">
+        <div> 
+            <h2>Fútbol</h2>
+            <p>USD$100 equipo para 10 personas.</p>
+            <h2>Basket</h2>
+            <p>USD$100 equipo para 10 personas.</p>
+            <h2>Voley</h2>
+            <p>USD$100 equipo para 10 personas.</p>
+        </div>
+    </div>
+    <h1>Precios de la cantina para la copa</h1>    
+    <div class="precios">
+        <div> 
+            <h2>Comidas</h2>
+            <p>Panchos $1500</p>
+            <p>Sandwich de miga $1500</p>
+            <p>Choripan $3500</p>
+            <h2>Bebidas</h2>
+            <p>Cocacola 500cc $1000</p>
+            <p>Pepsi 500cc $800</p>
+            <p>Vaso de limonada 500cc $750</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

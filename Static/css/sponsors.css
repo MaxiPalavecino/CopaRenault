@@ -1,0 +1,36 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.recuadro {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #333; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.413);
+}
+
+.card {
+    width: 232px; 
+    margin: 3px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sponsortitle {
+    text-align: center;
+}
+
+.sponsorimg {
+    width: 200px;
+    height: 200px; 
+    object-fit: cover; 
+    border: 2px solid #333; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.413);
+    display: block;
+    margin: 0 auto;
+}

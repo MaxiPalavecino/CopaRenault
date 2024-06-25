@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Tablón{% endblock %}
+
+{% block extra_styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tablon.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Aquí podrás encontrar la información principal del evento</h1>
+    <p>Para mejor visualización ver en computadora</p>
+    <div class="recuadro">
+        <div class="sponsors">
+            <h2>Sponsors</h2>
+            <div class="sponsors-item">
+                <img src="{{ url_for('static', filename='images/Secretariaambiente.jpg') }}" class="image">
+                <p>Secretaría de ambiente de Córdoba</p>
+            </div>
+            <div class="sponsors-item">
+                <img src="{{ url_for('static', filename='images/cocacola.png') }}" class="image">
+                <p>Coca Cola</p>
+            </div>
+        </div>
+
+    <div class="segundo-rec">
+        <div class="calendario">
+            <h2>Fechas importantes</h2>
+            <p>1 de abril: Apertura de inscripciones.</p>
+            <p>7 de mayo: Cierre definitivo de inscripciones para los partidos.</p>
+            <h3>10 de mayo: Copa Renault!</h3>
+            <p>16 de mayo: Premiación del sorteo!!!</p>
+            <h4>Ver calendario para saber todas las fechas!</h4>
+        </div>
+
+        <div class="partidos">
+            <h2>Partidos más cercanos</h2>
+            <p>9:45: Primer partido de fútbol.</p>
+            <p>9:45: Primer partido de basket.</p>
+            <p>9:45: Primer partido de voley.</p>
+            <p>10:15: Segundo partido de voley.</p>
+            <p>10:30: Segundo partido de basket.</p>
+            <p>11:15: Segundo partido de fútbol.</p>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}

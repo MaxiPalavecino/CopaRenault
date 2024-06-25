@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Copa Renault - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="icon" href="https://i.ibb.co/Tcg37Wn/image-removebg-preview-2.png"> 
+    {% block extra_styles %}{% endblock %}
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="navbar">
+            <a href="{{ url_for('precios') }}" class="link">Precios</a>
+            <a href="{{ url_for('sponsors') }}" class="link">Sponsors</a>
+            <a href="{{ url_for('galeria') }}" class="link">Galería</a>
+            <a href="{{ url_for('inicio') }}" class="link">Inicio</a>
+            <a href="{{ url_for('tablon') }}" class="link">Tablón</a>
+            <a href="{{ url_for('deportes') }}" class="link">Deportes</a>
+            <a href="{{ url_for('calendario') }}" class="link">Calendario</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        {% block body %}{% endblock %}
+    </div>
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>
